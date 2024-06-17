@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1500px)" href="desktop.css">
+
+  <title> E-commerce product page</title>
+
+
+</head>
+<style>
+  
+</style>
+<body>
+  <div class="had">
+    <img src="images/logo.svg" alt="">
+    
+  
+    <button class="menu-btn" id="menu-btn">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </button>
+
+  <nav class="nav-links" id="nav-links">
+    <ul>
+      <li>
+        <a href="#">Collections</a>
+      </li>
+      <li>
+        <a href="#">Men</a>
+      </li>
+      <li>
+        <a href="#">Women</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul></nav>
+    <div class="img-contain">
+    <div class="cart-container">
+      <div id="cart-icon" onclick="Addcart()">
+        🛒
+      </div>
+      <div id="notification-bubble">0</div>
+    </div>
+
+      <img src="images/image-avatar.png" class="img1" alt="">
+    </div>
+  </div>
+  <hr class="hr1">
+  
+      <div id="cart">
+        <p class="p1">Cart</p>
+        <hr>
+        <div id="product">
+        <img class="img1" src="images/image-product-1.jpg" alt="images/">
+        <div>
+          <pre> Fall Limited Edition sneakers</pre>
+          <p>$125.00 x <span id="qual">0</span> <b id="res">$ 0</b></p>
+        </div>
+          <img id="delete" src="images/icon-delete.svg" alt="">
+        </div>
+        <h4 id="myh4">your cart is empty</h4>
+        
+        <button id="button1">checkout</button>
+      </div>
+  <div id="contain3">
+    <div class="prev">
+      <button id="but1"><img src="images/icon-previous.svg" alt=""></button>
+      <img id="img1" src="images/image-product-1.jpg" alt="images/">
+      <img id="img2" src="images/image-product-2.jpg" alt="images/">
+      <img id="img3" src="images/image-product-3.jpg" alt="images/">
+      <img id="img4" src="images/image-product-4.jpg" alt="images/">
+      <button id="but2"><img src="images/icon-next.svg" alt=""></button><button id="close"><img src="images/icon-close.svg" alt="images/"></button>
+    </div>
+    <div class="images-product">
+      <img id="wach11" src="images/image-product-1.jpg" alt="images/">
+      <img id="wach22" src="images/image-product-2.jpg" alt="images/">
+      <img id="wach33" src="images/image-product-3.jpg" alt="images/">
+      <img id="wach44" src="images/image-product-4.jpg" alt="images/">
+    </div></div>
+  <contain><div class="contain2">
+    <img class="img1" src="images/image-product-1.jpg" alt="">
+    <div class="images-product">
+      <img id="wach1" src="images/image-product-1.jpg" alt="images/">
+      <img id="wach2" src="images/image-product-2.jpg" alt="images/">
+      <img id="wach3" src="images/image-product-3.jpg" alt="images/">
+      <img id="wach4" src="images/image-product-4.jpg" alt="images/">
+    </div>
+  
+  </div>
+    <div class="contain1" >
+     <p>Sneaker Company</p>
+  <br>
+<h1>
+  Fall Limited Edition <br>
+  Sneakers</h1><br>
+<p>
+  These low-profile sneakers are your perfect casual wear companion. Featuring a
+  durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+  
+<span class="span1">
+<h2>$125.00</h2>
+<h3>50%</h3>
+</span>
+
+  <del>$250.00</del>
+
+<div class="pricing">
+  <div class="quality">
+    <ul>
+      <li onclick="decraseBtn()">-</li>
+      <b id="countBtn">0</b>
+      <li onclick="increase()">+</li>
+    </ul>
+  </div>
+  <button onclick="addProduct()">
+      <img src="images/icon-cart.svg" onclick="add-product()"> Add to cart</button>
+</div>
+<footer>
+  <p class="p1"> Devellope par <b>Mr.Hamoud Limam</b></p>
+<hr>
+</footer>
+    </div>
+</contain>
+  
+</body>
+<script src='main.js'>
+
+</script>
+
+</html>
